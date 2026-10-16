@@ -26,6 +26,7 @@ struct Localization {
         case .korean: KoreanStrings()
         case .chinese: ChineseStrings()
         case .russian: RussianStrings()
+        case .arabic: ArabicStrings()
         }
     }
 

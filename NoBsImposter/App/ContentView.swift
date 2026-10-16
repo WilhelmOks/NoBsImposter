@@ -54,6 +54,11 @@ struct ContentView: View {
         }
         .tint(AppTheme.accent)
         .preferredColorScheme(.dark)
+        // The language is chosen in-app, not from the system locale, so drive
+        // the locale and layout direction from it — this is what flips SwiftUI
+        // to right-to-left mirroring for Arabic.
+        .environment(\.locale, Locale(identifier: model.language.rawValue))
+        .environment(\.layoutDirection, model.language.isRTL ? .rightToLeft : .leftToRight)
         .animation(.smooth(duration: 0.35), value: phase)
         .onAppear { applyKeepScreenOn() }
         .onChange(of: model.keepScreenOn) { _, _ in applyKeepScreenOn() }

@@ -161,6 +161,11 @@ struct SetupView: View {
             .scrollDisabled(true)
             .environment(\.editMode, $namesEditMode)
             .frame(height: CGFloat(model.playerCount) * 64)
+            // The name fields are UIKit-backed (UITextField). UIKit caches the
+            // RTL layout direction and won't reset it when switching back from
+            // Arabic, leaving the fields mirrored. Rebind identity to the
+            // language so SwiftUI rebuilds the rows with the correct direction.
+            .id(model.language)
         }
     }
 

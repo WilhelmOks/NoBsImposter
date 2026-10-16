@@ -28,6 +28,7 @@ enum WordData {
         case .korean: koreanCategories
         case .chinese: chineseCategories
         case .russian: russianCategories
+        case .arabic: arabicCategories
         }
     }
 

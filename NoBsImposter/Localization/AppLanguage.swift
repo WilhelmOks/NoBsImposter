@@ -20,8 +20,14 @@ enum AppLanguage: String, CaseIterable, Identifiable, Codable {
     case korean = "ko"
     case chinese = "zh-Hans"
     case russian = "ru"
+    case arabic = "ar"
 
     var id: String { rawValue }
+
+    /// Whether this language is written right-to-left. The app picks its
+    /// language in-app rather than via the system locale, so views must drive
+    /// the `layoutDirection` environment from this for SwiftUI to mirror the UI.
+    var isRTL: Bool { self == .arabic }
 
     var displayName: String {
         switch self {
@@ -35,6 +41,7 @@ enum AppLanguage: String, CaseIterable, Identifiable, Codable {
         case .korean: "한국어"
         case .chinese: "简体中文"
         case .russian: "Русский"
+        case .arabic: "العربية"
         }
     }
 
@@ -50,6 +57,7 @@ enum AppLanguage: String, CaseIterable, Identifiable, Codable {
         case .korean: "🇰🇷"
         case .chinese: "🇨🇳"
         case .russian: "🇷🇺"
+        case .arabic: "🇸🇦"
         }
     }
 }
