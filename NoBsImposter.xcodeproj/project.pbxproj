@@ -7,26 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C231B6530780EE300BDCB55 /* AppLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C231B6430780EE300BDCB55 /* AppLanguage.swift */; };
-		0C231B6730780EEF00BDCB55 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C231B6630780EEF00BDCB55 /* Localization.swift */; };
-		0C231B6930780F1300BDCB55 /* WordData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C231B6830780F1300BDCB55 /* WordData.swift */; };
-		0C231B6B30780F1F00BDCB55 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C231B6A30780F1F00BDCB55 /* GameModel.swift */; };
-		0C231B6D30780F3A00BDCB55 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C231B6C30780F3A00BDCB55 /* Components.swift */; };
-		0C231B6F30780F4C00BDCB55 /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C231B6E30780F4C00BDCB55 /* SetupView.swift */; };
-		0C231B7130780F5C00BDCB55 /* RevealView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C231B7030780F5C00BDCB55 /* RevealView.swift */; };
-		0C231B7330780F6700BDCB55 /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C231B7230780F6700BDCB55 /* SummaryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0C231B56307808C700BDCB55 /* NoBsImposter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoBsImposter.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0C231B6430780EE300BDCB55 /* AppLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLanguage.swift; sourceTree = "<group>"; };
-		0C231B6630780EEF00BDCB55 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
-		0C231B6830780F1300BDCB55 /* WordData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordData.swift; sourceTree = "<group>"; };
-		0C231B6A30780F1F00BDCB55 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
-		0C231B6C30780F3A00BDCB55 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
-		0C231B6E30780F4C00BDCB55 /* SetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
-		0C231B7030780F5C00BDCB55 /* RevealView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevealView.swift; sourceTree = "<group>"; };
-		0C231B7230780F6700BDCB55 /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -53,14 +37,6 @@
 			children = (
 				0C231B58307808C700BDCB55 /* NoBsImposter */,
 				0C231B57307808C700BDCB55 /* Products */,
-				0C231B6430780EE300BDCB55 /* AppLanguage.swift */,
-				0C231B6630780EEF00BDCB55 /* Localization.swift */,
-				0C231B6830780F1300BDCB55 /* WordData.swift */,
-				0C231B6A30780F1F00BDCB55 /* GameModel.swift */,
-				0C231B6C30780F3A00BDCB55 /* Components.swift */,
-				0C231B6E30780F4C00BDCB55 /* SetupView.swift */,
-				0C231B7030780F5C00BDCB55 /* RevealView.swift */,
-				0C231B7230780F6700BDCB55 /* SummaryView.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -146,14 +122,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C231B6530780EE300BDCB55 /* AppLanguage.swift in Sources */,
-				0C231B7130780F5C00BDCB55 /* RevealView.swift in Sources */,
-				0C231B6730780EEF00BDCB55 /* Localization.swift in Sources */,
-				0C231B6D30780F3A00BDCB55 /* Components.swift in Sources */,
-				0C231B6930780F1300BDCB55 /* WordData.swift in Sources */,
-				0C231B7330780F6700BDCB55 /* SummaryView.swift in Sources */,
-				0C231B6F30780F4C00BDCB55 /* SetupView.swift in Sources */,
-				0C231B6B30780F1F00BDCB55 /* GameModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -20,12 +20,20 @@ enum WordData {
         switch language {
         case .german: germanCategories
         case .english: englishCategories
+        case .spanish: spanishCategories
+        case .french: frenchCategories
+        case .italian: italianCategories
+        case .portuguese: portugueseCategories
+        case .japanese: japaneseCategories
+        case .korean: koreanCategories
+        case .chinese: chineseCategories
+        case .russian: russianCategories
         }
     }
 
     // MARK: - German
 
-    private static let germanCategories: [WordCategory] = [
+    static let germanCategories: [WordCategory] = [
         WordCategory(id: "celebrities", symbol: "star.fill", name: "Prominente", words: [
             "Albert Einstein", "Angela Merkel", "Beethoven", "Boris Becker", "Claudia Schiffer",
             "Diane Kruger", "Franz Beckenbauer", "Goethe", "Heidi Klum", "Helmut Kohl",
@@ -104,7 +112,7 @@ enum WordData {
             "Black Panther", "Doctor Strange", "Ant-Man", "Deadpool", "X-Men",
             "Wolverine", "Batman", "Superman", "Wonder Woman", "Aquaman",
             "Joker", "Der Hobbit", "Der Herr der Ringe", "Harry Potter", "Phantastische Tierwesen",
-            "Pirates of the Caribbean", "Fluch der Karibik", "Transformers", "Mission Impossible", "James Bond",
+            "Fluch der Karibik", "Transformers", "Mission Impossible", "James Bond",
             "Casino Royale", "Skyfall", "Spectre", "Der Spion der mich liebte", "Goldfinger",
             "Octopussy", "Stirb langsam", "Stirb langsam 2", "Rambo", "Rocky",
             "Rocky II", "Der Terminator", "Terminator 2", "Predator", "Alien",
@@ -112,8 +120,8 @@ enum WordData {
             "Der Marsianer", "Gravity", "Interstellar", "Inception", "Tenet",
             "Dunkirk", "Memento", "Prestige", "Der Soldat James Ryan", "Apocalypse Now",
             "Full Metal Jacket", "Platoon", "Der Pianist", "Hotel Ruanda", "Blood Diamond",
-            "Invictus", "Der Letzte Mohikaner", "Dances with Wolves", "The Revenant", "Silence of the Lambs",
-            "Se7en", "Zodiac", "Sieben", "Erin Brockovich", "A Beautiful Mind",
+            "Invictus", "Der Letzte Mohikaner", "Dances with Wolves", "The Revenant", "Se7en",
+            "Zodiac", "Erin Brockovich", "A Beautiful Mind",
             "Der Teufel trägt Prada", "Legally Blonde", "Bridget Jones Tagebuch", "Pretty Woman", "Verrückt nach Mary",
             "American Pie", "Die Chaos-AG", "Superbad", "Hangover", "Scary Movie",
             "Die Nacht des Jägers", "Psycho", "Der Exorzist", "Das Omen", "Poltergeist",
@@ -192,8 +200,8 @@ enum WordData {
             "Margarine", "Käse", "Gouda", "Cheddar", "Parmesan",
             "Mozzarella", "Brie", "Camembert", "Frischkäse", "Quark",
             "Joghurt", "Sahne", "Milch", "Buttermilch", "Ei",
-            "Rührei", "Spiegelei", "Omelett", "Fleisch", "Hühnchen",
-            "Hähnchen", "Schweinefleisch", "Rindfleisch", "Lammfleisch", "Speck",
+            "Rührei", "Spiegelei", "Omelett", "Fleisch", "Hähnchen",
+            "Schweinefleisch", "Rindfleisch", "Lammfleisch", "Speck",
             "Schinken", "Wurst", "Bratwurst", "Salami", "Leberwurst",
             "Schnitzel", "Steak", "Hamburger", "Frikadelle", "Fisch",
             "Lachs", "Thunfisch", "Forelle", "Hering", "Garnele",
@@ -202,7 +210,7 @@ enum WordData {
             "Griechischer Salat", "Pommes frites", "Kartoffelpuree", "Kartoffelsuppe", "Bratkartoffeln",
             "Knödel", "Sushi", "Tacos", "Burrito", "Kebab",
             "Sandwich", "Wrap", "Hot Dog", "Nudelsuppe", "Risotto",
-            "Paella", "Curry", "Reisgericht", "Omelette", "Pancakes",
+            "Paella", "Curry", "Reisgericht", "Pancakes",
             "Waffeln", "Pfannkuchen", "Crepes", "Torte", "Kuchen",
             "Schokoladenkuchen", "Käsekuchen", "Apfelkuchen", "Schwarzwälderkirschtorte", "Tiramisu",
             "Mousse au Chocolat", "Panna Cotta", "Eis", "Vanilleeis", "Schokoladeneis",
@@ -284,20 +292,20 @@ enum WordData {
             "Bodybuilding", "Yoga", "Pilates", "Aerobic", "Zumba",
             "Tanzen", "Ballett", "Hip-Hop-Tanz", "Breakdance", "Klettern",
             "Bouldern", "Wandern", "Bergsteigen", "Freiklettern", "Fallschirmspringen",
-            "Gleitschirmfliegen", "Drachenfliegen", "Paragliding", "Bungee-Jumping", "Reiten",
+            "Gleitschirmfliegen", "Drachenfliegen", "Bungee-Jumping", "Reiten",
             "Springreiten", "Dressurreiten", "Polo", "Pferderennen", "Motorsport",
             "Formel-1", "Rallye", "Motocross", "Kartsport", "Speedway",
             "Rollhockey", "Floorball", "Ultimate Frisbee", "Disc Golf", "Bowling",
             "Billard", "Darts", "Schach", "Boccia", "Petanque",
             "Padel", "Beachvolleyball", "Beachsoccer", "Futsal", "Hallenfußball",
-            "Streetsoccer", "Wasserpolo", "Freistilringen", "Greco-Römisches Ringen", "Sambo",
+            "Streetsoccer", "Freistilringen", "Greco-Römisches Ringen", "Sambo",
             "Aikido", "Kendo", "Kung Fu", "Capoeira", "Muay Thai",
-            "Kickboxen", "Thaiboxen", "MMA", "Laufen", "Joggen",
+            "Kickboxen", "MMA", "Laufen", "Joggen",
             "Nordic Walking", "Walken", "Rollstuhlrennen", "Paracycling", "Sitvolleyball",
             "Goalball", "Sportschießen", "Moderner Fünfkampf", "Duathlon", "Aquathlon",
             "Hindernislauf", "Crosslauf", "Geländelauf", "Orientierungslauf", "Staffellauf",
-            "Freerunning", "Parkour", "Gelaendelauf", "Rollstuhlfechten", "Stocksport",
-            "Inlinehockey", "Streetball", "Sandvolleyball",
+            "Freerunning", "Parkour", "Rollstuhlfechten", "Stocksport",
+            "Inlinehockey", "Streetball",
         ]),
         WordCategory(id: "jobs", symbol: "briefcase.fill", name: "Berufe", words: [
             "Arzt", "Krankenpfleger", "Zahnarzt", "Tierarzt", "Apotheker",
@@ -376,11 +384,11 @@ enum WordData {
             "Stadtplan", "Taschenlampe", "Ersatzschlüssel", "Nagellack",
         ]),
         WordCategory(id: "instruments", symbol: "guitars.fill", name: "Musikinstrumente", words: [
-            "Geige", "Violine", "Viola", "Cello", "Kontrabass",
+            "Violine", "Viola", "Cello", "Kontrabass",
             "Harfe", "Gitarre", "Akustikgitarre", "Elektrische Gitarre", "Bassgitarre",
             "Ukulele", "Mandoline", "Banjo", "Laute", "Zither",
             "Hackbrett", "Klavier", "Fluegel", "Cembalo", "Orgel",
-            "Akkordeon", "Ziehharmonika", "Mundharmonika", "Konzertina", "Floete",
+            "Akkordeon", "Mundharmonika", "Konzertina", "Floete",
             "QuerFloete", "Blockfloete", "Piccolo", "Oboe", "Englischhorn",
             "Fagott", "Kontrafagott", "Klarinette", "Bassklarinette", "Saxophon",
             "Altsaxophon", "Tenorsaxophon", "Sopransaxophon", "Baritonsaxophon", "Trompete",
@@ -395,14 +403,14 @@ enum WordData {
             "Tabla", "Tambura", "Shamisen", "Koto", "Erhu",
             "Balalaika", "Bouzouki", "Oud", "Darbuka", "Kalimba",
             "Mbira", "Kora", "Bandoneon", "Melodica", "Handpan",
-            "Hang", "Kazoo", "Bratsche",
+            "Kazoo",
         ]),
         WordCategory(id: "landmarks", symbol: "building.columns.fill", name: "Sehenswürdigkeiten", words: [
             "Eiffelturm", "Freiheitsstatue", "Chinesische Mauer", "Schiefer Turm von Pisa", "Kolosseum",
             "Taj Mahal", "Machu Picchu", "Akropolis", "Stonehenge", "Pyramiden von Gizeh",
             "Sphinx von Gizeh", "Angkor Wat", "Burj Khalifa", "Sydney Opera House", "Big Ben",
             "Tower Bridge", "Brandenburger Tor", "Niagarafaelle", "Grand Canyon", "Mount Everest",
-            "Fuji", "Santorini", "Ayers Rock", "Victoriafaelle", "Amazonas",
+            "Fuji", "Santorini", "Victoriafaelle", "Amazonas",
             "Sahara", "Galapagos-Inseln", "Parthenon", "Louvre", "Vatikanstadt",
             "Petersdom", "Sixtinische Kapelle", "Trevi-Brunnen", "Piazza di Spagna", "Schloss Versailles",
             "Alhambra", "Sagrada Familia", "Park Guell", "Hagia Sophia", "Blaue Moschee",
@@ -411,20 +419,20 @@ enum WordData {
             "Fushimi Inari Taisha", "Itsukushima-Schrein", "Kyoto Bambuswaelder", "Neuschwanstein", "Kölner Dom",
             "Hambacher Schloss", "Heidelberger Schloss", "Dresdner Frauenkirche", "Berliner Mauer", "Checkpoint Charlie",
             "Reichstag", "Hofbraeuhaus", "Cheops-Pyramide", "Tempel von Karnak", "Luxor-Tempel",
-            "Abu Simbel", "Kilimandscharo", "Serengeti", "Okavango-Delta", "Tafelsee",
-            "Tafelberg", "Krueger-Nationalpark", "Pyramiden von Teotihuacan", "Chichen Itza", "Palenque",
+            "Abu Simbel", "Kilimandscharo", "Serengeti", "Okavango-Delta", "Tafelberg",
+            "Krueger-Nationalpark", "Pyramiden von Teotihuacan", "Chichen Itza", "Palenque",
             "Tikal", "Christusstatue Rio", "Zuckerhut", "Iguazu-Faelle", "Salar de Uyuni",
-            "Torres del Paine", "Galapagos", "Magellanstrasse", "Bora Bora", "Fiordland",
+            "Torres del Paine", "Magellanstrasse", "Bora Bora", "Fiordland",
             "Milford Sound", "Uluru", "Great Barrier Reef", "Whitsunday Islands", "Yellowstone",
             "Yosemite", "Monument Valley", "Bryce Canyon", "Zion Canyon", "Death Valley",
             "Mount Rushmore", "Freiheitsbell", "Golden Gate Bridge", "Empire State Building", "Chrysler Building",
-            "Brooklyn Bridge", "Weisses Haus", "Lincoln Memorial", "Washington Monument", "Statue of Liberty",
+            "Brooklyn Bridge", "Weisses Haus", "Lincoln Memorial", "Washington Monument",
             "Times Square", "Central Park", "Hollywood Sign", "Las Vegas Strip", "Mississippi",
             "Rocky Mountains", "Appalachians", "Lake Superior", "Lake Michigan", "Great Salt Lake",
             "Everglades", "Cape Canaveral", "Penaelisches Bermudadreieck", "Edinburgh Castle", "Buckingham Palace",
             "Windsor Castle", "Tower of London", "Greenwich Observatory", "Cliffs of Moher", "Giant's Causeway",
             "Hadrianswall", "Loch Ness", "Schloss Balmoral", "Pompeji", "Forum Romanum",
-            "Pantheon", "Castel Sant Angelo", "Pisa", "Venedig Markusplatz", "Canal Grande",
+            "Pantheon", "Castel Sant Angelo", "Venedig Markusplatz", "Canal Grande",
             "Vatikanische Museen", "Piazza Navona", "Cinque Terre", "Amalfikueste", "Dubrovnik",
             "Plitvicer Seen", "Blaue Grotte Capri", "Olympia", "Delphi", "Rhodos Altstadt",
             "Meteora Kloester", "Thessaloniki Weisser Turm", "Schloss Belvedere", "Spanische Reitschule Wien", "Stephansdom Wien",
@@ -432,14 +440,14 @@ enum WordData {
             "CN Tower", "Banff Nationalpark", "Niagara Falls", "Jasper Nationalpark", "Mount Logan",
             "Matterhorn", "Jungfraujoch", "Rheinfall", "Aletschgletscher", "Chateau de Chillon",
             "Atomium", "Manneken Pis", "Windmuehlen Kinderdijk", "Anne-Frank-Haus", "Rijksmuseum",
-            "Tivoli Kopenhagen", "Geysir Island", "Niagarafaelle Kanada", "Nordlichter", "Fjorde Norwegen",
+            "Tivoli Kopenhagen", "Geysir Island", "Nordlichter", "Fjorde Norwegen",
             "Geirangerfjord", "Sognefjord",
         ]),
     ]
 
     // MARK: - English
 
-    private static let englishCategories: [WordCategory] = [
+    static let englishCategories: [WordCategory] = [
         WordCategory(id: "celebrities", symbol: "star.fill", name: "Celebrities", words: [
             "Albert Einstein", "Angela Merkel", "Beethoven", "Boris Becker", "Claudia Schiffer",
             "Diane Kruger", "Franz Beckenbauer", "Goethe", "Heidi Klum", "Helmut Kohl",
@@ -738,8 +746,8 @@ enum WordData {
             "painter", "locksmith", "welder", "mechanic", "auto mechanic",
             "machinist", "farmer", "gardener", "forester", "fisherman",
             "chef", "baker", "pastry chef", "butcher", "waiter",
-            "bartender", "barista", "hairdresser", "cosmetician",
-            "beautician", "tailor", "cobbler", "watchmaker", "jeweler",
+            "bartender", "barista", "hairdresser", "beautician",
+            "tailor", "cobbler", "watchmaker", "jeweler",
             "accountant", "tax advisor", "banker", "auditor", "entrepreneur",
             "manager", "director", "executive", "salesperson", "cashier",
             "real estate agent", "insurance agent", "stockbroker", "financial advisor", "logistician",
@@ -756,7 +764,7 @@ enum WordData {
             "office clerk", "data analyst", "IT technician", "network administrator", "cybersecurity analyst",
             "product manager", "project manager", "human resources manager", "marketing manager", "public relations specialist",
             "event planner", "travel agent", "tour guide", "hotel manager", "chef de cuisine",
-            "sommelier", "florist", "funeral director", "mortician", "tattoo artist",
+            "sommelier", "florist", "funeral director", "tattoo artist",
             "massage therapist", "chiropractor", "acupuncturist", "speech therapist", "occupational therapist",
             "radiographer", "lab technician", "dental hygienist", "veterinary technician", "animal trainer",
             "zookeeper", "marine biologist", "environmental scientist", "archaeologist", "anthropologist",
